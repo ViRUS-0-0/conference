@@ -44,9 +44,9 @@ export default function AboutPage() {
     ];
 
     const jaipurSites = [
-        { name: "Hawa Mahal", sub: "Palace of Winds", img: "https://images.unsplash.com/photo-1602339752474-f77aa7b3ced5?auto=format&fit=crop&q=80&w=600" },
-        { name: "Amber Fort", sub: "Historic Fort & Palace", img: "https://images.unsplash.com/photo-1590050752117-23a9d7fc6f9d?auto=format&fit=crop&q=80&w=600" },
-        { name: "City Palace", sub: "Royal Residence", img: "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&q=80&w=600" }
+        { name: "Amber Fort", sub: "Historic Fort & Palace", img: "/conference/pictures/amber-fort.png" },
+        { name: "Hawa Mahal", sub: "Palace of Winds", img: "/conference/pictures/hawa-mahal.png" },
+        { name: "City Palace", sub: "Royal Residence", img: "/conference/pictures/city-palace.png" }
     ];
 
     return (
@@ -163,10 +163,13 @@ export default function AboutPage() {
                         </div>
                         <div className="lg:w-1/2 relative">
                             <div className="aspect-video rounded-3xl overflow-hidden shadow-2xl">
-                                <img
-                                    src="https://images.unsplash.com/photo-1541339907198-e08756ebafe3?auto=format&fit=crop&q=80&w=1200"
-                                    alt="MUJ Campus"
-                                    className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
+                                <video
+                                    autoPlay
+                                    loop
+                                    muted
+                                    playsInline
+                                    className="w-full h-full object-cover"
+                                    src="/conference/videos/MUJ_Venue.webm"
                                 />
                             </div>
                             <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary rounded-full blur-3xl opacity-20 -z-10"></div>

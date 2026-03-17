@@ -116,11 +116,18 @@ export default function About() {
                         </a>
                     </div>
 
-                    {/* Abstract Pattern / Placeholder for Campus Image */}
-                    <div className="w-full md:w-5/12 min-h-[300px] bg-gradient-to-br from-primary to-indigo-900 relative">
-                        {/* Decorative abstract elements simulating a modern campus shot */}
-                        <div className="absolute inset-0 opacity-20 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiNmZmYiLz48L3N2Zz4=')]"></div>
-                        <div className="absolute right-0 bottom-0 w-64 h-64 bg-white/10 rounded-tl-[100px] backdrop-blur-md border-t border-l border-white/20"></div>
+                    {/* Campus Video */}
+                    <div className="w-full md:w-5/12 min-h-[300px] relative overflow-hidden">
+                        <video
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            className="absolute inset-0 w-full h-full object-cover"
+                            src="/conference/videos/MUJ_Venue.webm"
+                        />
+                        {/* Subtle overlay for blending */}
+                        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/40 to-transparent pointer-events-none"></div>
                     </div>
                 </motion.div>
 
