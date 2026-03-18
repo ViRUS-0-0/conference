@@ -17,7 +17,7 @@ export default function Navbar() {
 
     return (
         <div className="fixed top-6 left-0 right-0 z-50 px-4 pointer-events-none">
-            <nav className="max-w-5xl mx-auto glass rounded-full pointer-events-auto border-white/40 shadow-xl overflow-hidden">
+            <nav className={`max-w-5xl mx-auto glass pointer-events-auto border-white/40 shadow-xl overflow-hidden transition-all duration-300 ${isOpen ? 'rounded-2xl' : 'rounded-full'}`}>
                 <div className="px-6 md:px-8">
                     <div className="flex justify-between items-center h-16">
                         {/* Logo Section */}
