@@ -33,21 +33,21 @@ export default function ContactPage() {
                                 <MapPin className="text-primary w-6 h-6 mt-1 mr-4 shrink-0" />
                                 <div>
                                     <h3 className="font-bold text-slate-800 mb-1">Venue</h3>
-                                    <p className="text-slate-600 text-sm">Manipal University Jaipur,<br />Dehmi Kalan, Jaipur-Ajmer Expressway,<br />Jaipur, Rajasthan 303007</p>
+                                    <p className="text-slate-600 text-sm">Central University of Karnataka,<br />Kalaburagi,<br />Karnataka 585367</p>
                                 </div>
                             </div>
                             <div className="flex items-start">
                                 <Mail className="text-primary w-6 h-6 mt-1 mr-4 shrink-0" />
                                 <div>
                                     <h3 className="font-bold text-slate-800 mb-1">Email Us</h3>
-                                    <p className="text-slate-600 text-sm">contact@iccaiml.com<br />support@iccaiml.com</p>
+                                    <p className="text-slate-600 text-sm">incip.conference@gmail.com</p>
                                 </div>
                             </div>
                             <div className="flex items-start">
                                 <Phone className="text-primary w-6 h-6 mt-1 mr-4 shrink-0" />
                                 <div>
                                     <h3 className="font-bold text-slate-800 mb-1">Call Us</h3>
-                                    <p className="text-slate-600 text-sm">+91 141 3999100<br />+91 123 456 7890</p>
+                                    <p className="text-slate-600 text-sm">+91 8618218389<br />+91 9776111926</p>
                                 </div>
                             </div>
                         </div>

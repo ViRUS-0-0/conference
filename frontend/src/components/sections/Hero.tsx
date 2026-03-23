@@ -64,7 +64,7 @@ export default function Hero() {
                     transition={{ duration: 0.8, delay: 0.2 }}
                 >
                     <h1 className="text-6xl md:text-8xl lg:text-9xl font-black tracking-tight text-white mb-6 drop-shadow-[0_10px_30px_rgba(0,0,0,0.5)]">
-                        ICCAIML <span className="text-[#ff6a2b]">'26</span>
+                        INCIP <span className="text-[#ff6a2b]">'26</span>
                     </h1>
                 </motion.div>
 
@@ -76,11 +76,10 @@ export default function Hero() {
                     className="space-y-4 mb-12"
                 >
                     <p className="text-lg md:text-2xl text-white/90 font-medium max-w-2xl mx-auto drop-shadow-md">
-                        International Conference on Computation of Artificial Intelligence &
-                        Machine Learning
+                        International Conference on Next Generation Communication & Information Processing
                     </p>
                     <p className="text-sm md:text-base text-[#ff6a2b] font-bold font-mono tracking-[0.3em] uppercase drop-shadow-sm">
-                        November 19–21, 2026 <span className="mx-2 text-white/50">•</span> Manipal University Jaipur
+                        August 20–21, 2026 <span className="mx-2 text-white/50">•</span> Central University of Karnataka
                     </p>
                 </motion.div>
 
@@ -108,7 +107,7 @@ export default function Hero() {
                     className="text-xs text-white/60 flex items-center justify-center font-mono"
                 >
                     <span className="mr-2 text-[#ff6a2b] font-bold">&gt;</span>
-                    Jaipur-Ajmer Express Highway, Dehmi Kalan, Jaipur · MUJ campus
+                    Central University of Karnataka, Kalaburagi
                     <span className="ml-2 w-2 h-4 bg-[#ff6a2b] block animate-pulse"></span>
                 </motion.div>
             </div>

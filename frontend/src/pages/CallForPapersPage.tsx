@@ -4,31 +4,60 @@ export default function CallForPapersPage() {
     const tracks = [
         {
             id: 1,
-            title: "Artificial Intelligence",
+            title: "Advance Communication",
             topics: [
-                "AI Algorithms", "Artificial Intelligence Tools and Application",
-                "Automatic Control", "Bioinformatics",
-                "CAD Design and Testing", "Computational Theories of Learning",
-                "Computer Vision and Speech Understanding", "Data Mining and Machine Learning Tools",
-                "Fuzzy Logic", "Heuristic and AI Planning Strategies and Tools",
-                "Hybrid Intelligent Systems", "Information Retrieval",
-                "Intelligent System Architecture", "Knowledge Representation",
-                "Knowledge-based Systems", "Mechatronics",
-                "Multimedia & Cognitive Informatics", "Natural Language Processing",
-                "Neural Networks", "Parallel Processing",
-                "Pattern Recognition", "Pervasive Computing and Ambient Intelligence",
-                "Programming Languages", "Reasoning and Evolution",
-                "Recent Trends and Developments", "Robotics",
-                "Semantic Web Techniques and Technologies", "Soft computing theory and Applications",
-                "Software & Hardware Architectures", "Web Intelligence Applications & Search"
+                "Unmanned Aerial Vehicle Networks", "5G Networks and IoT", "Future Internet Architecture",
+                "Disaster Recovery of Networks", "Mobile Networks", "Ad hoc and Mesh Networks",
+                "Named Data Networking", "Network Performance Analysis", "QoS for Emergency Applications",
+                "Reconfigurable intelligent surfaces", "Real-time Systems and Networks", 
+                "Context and location-aware wireless services and applications", "User-centric networks and adaptive services",
+                "Dynamic sensor networks for urban applications", "Wireless emergency and security systems",
+                "Small Cells and femtocell Networks", "Wireless mesh Networks", "Vehicular Wireless Networks",
+                "Cognitive Radio Networks", "Underwater Wireless Networks", "mm Wave Wireless Networks",
+                "Software-defined Wireless Networks", "Reconfigurable Wireless Networks", 
+                "Satellite-based mobile access and backhaul", "Testbed and prototype implementation of Wireless services",
+                "Machine and Deep Learning for Wireless Communication and Computing", "Green Communication Systems and Network",
+                "Optical Networks and Systems"
             ],
         },
         {
             id: 2,
-            title: "Machine Learning",
+            title: "Information Processing",
             topics: [
-                "Applications", "Learning in knowledge-intensive systems",
-                "Learning Methods and analysis", "Learning Problems"
+                "Computational Intelligence", "Ambient Intelligence", "Deep Learning",
+                "Recommendation Systems", "Intelligent Systems", "Image Processing",
+                "Natural Language Processing", "Computer Vision", "Sentiment Analysis",
+                "Speech & Gesture Analysis", "Augmented/Virtual Reality, Data Pre-Processing",
+                "Big Data Analytics", "Soft Computing", "Nature Inspired Computing",
+                "Predictive Analysis", "Medical Imaging and Signal Processing",
+                "Medical Information Processing and Security Challenges", "Biomedical and Healthcare Blockchain",
+                "Robotics and Artificial Intelligence"
+            ],
+        },
+        {
+            id: 3,
+            title: "Smart Systems",
+            topics: [
+                "Internet of Things", "Smart healthcare systems", "Energy Efficient Infrastructure",
+                "Intelligent Infrastructure and Transportation", "Applications of Deep Learning for building Smart Systems",
+                "Innovative Control and Management Techniques", "Energy Saving and green IoT applications",
+                "Smart City Solutions", "Autonomous Vehicles", "Intelligence Fault Diagnosis and Maintenance Technologies",
+                "Smart Process monitoring and Control Strategies", "Smart Materials", "Micro-electromechanical Systems",
+                "Sensors Technologies", "Remote Sensing Technologies", "Smart Circuits for Micromachines",
+                "Semiconductor Technologies and Cognitive Electronics", "Advanced VLSI systems",
+                "Communication Technologies and Standards for Smart Grids", "Cyber Security for Power Grid",
+                "Electric Vehicle Technology", "Charging Infrastructure: Wired and Wireless Charging Systems",
+                "Smart Grid and Micro Grid Modeling & Simulation.", "Renewable Energy Integration",
+                "Solar PV Energy Systems and Materials", "Applications of Computational Intelligence in Power Systems"
+            ],
+        },
+        {
+            id: 4,
+            title: "RF, Microwave and mm-Wave",
+            topics: [
+                "Phased Array Antennas", "Reflector and Reflect-array Antennas", "Planar Antennas",
+                "Frequency-selective Surfaces", "Satellite Antennas and Payloads", "Aircraft Antennas",
+                "Ultra-wideband and Multi-band Antennas"
             ],
         }
     ];
@@ -50,7 +79,7 @@ export default function CallForPapersPage() {
                     >
                         Submit Your Research
                     </motion.h1>
-                    <p className="text-slate-500 font-medium">ICCAIML '26 • November 19–21, 2026</p>
+                    <p className="text-slate-500 font-medium">INCIP '26 • August 20–21, 2026</p>
                 </div>
 
                 {/* Theme Card */}
@@ -62,7 +91,7 @@ export default function CallForPapersPage() {
                 >
                     <h2 className="text-2xl font-bold text-slate-800 mb-4">Conference Theme</h2>
                     <p className="text-slate-600 leading-relaxed">
-                        The conference theme is based on Artificial Intelligence and Machine Learning. Two major tracks are included in the conference.
+                        The conference theme is based on Next Generation Communication & Information Processing. Four major tracks are included in the conference.
                     </p>
                 </motion.div>
 
@@ -105,7 +134,7 @@ export default function CallForPapersPage() {
                 >
                     <h3 className="text-2xl font-bold text-slate-900 mb-4">Ready to Submit?</h3>
                     <p className="text-slate-500 mb-8 max-w-lg mx-auto">
-                        To submit your paper to the ICCAIML2026, please click on the Submit Manuscript button.
+                        To submit your paper to the INCIP 2026, please click on the Submit Manuscript button.
                     </p>
                     <button
                         onClick={() => window.open("https://cmt3.research.microsoft.com/", "_blank")}

@@ -10,12 +10,11 @@ export default function Footer() {
                         <div className="flex items-center space-x-2 mb-4">
                             <span className="text-primary text-xl">◈</span>
                             <span className="font-bold text-xl tracking-tight text-slate-900">
-                                ICCAIML <span className="text-primary font-light text-lg">'26</span>
+                                INCIP <span className="text-primary font-light text-lg">'26</span>
                             </span>
                         </div>
                         <p className="text-sm text-slate-500 leading-relaxed">
-                            2nd International Conference on Computation of Artificial
-                            Intelligence & Machine Learning. November 19-21, 2026.
+                            2nd International Conference on Next Generation Communication & Information Processing. August 20-21, 2026.
                         </p>
                     </div>
 
@@ -26,21 +25,21 @@ export default function Footer() {
                             <li className="flex items-start text-sm text-slate-500">
                                 <MapPin className="w-4 h-4 mr-2 text-primary mt-1 flex-shrink-0" />
                                 <span>
-                                    Manipal University Jaipur
+                                    Central University of Karnataka,
                                     <br />
-                                    Jaipur-Ajmer Express Highway
+                                    Kalaburagi
                                     <br />
-                                    Dehmi Kalan, Jaipur, Rajasthan 303007
+                                    Karnataka
                                 </span>
                             </li>
                             <li className="flex items-center text-sm text-slate-500">
                                 <Phone className="w-4 h-4 mr-2 text-primary" />
-                                <span>+91 141 3999100</span>
+                                <span>+91 8618218389, +91 9776111926</span>
                             </li>
                             <li className="flex items-center text-sm text-slate-500">
                                 <Mail className="w-4 h-4 mr-2 text-primary" />
-                                <a href="mailto:info@iccaiml.com" className="hover:text-primary">
-                                    info@iccaiml.com
+                                <a href="mailto:incip.conference@gmail.com" className="hover:text-primary">
+                                    incip.conference@gmail.com
                                 </a>
                             </li>
                         </ul>
@@ -82,7 +81,7 @@ export default function Footer() {
 
                 <div className="mt-12 pt-8 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500">
                     <div className="flex flex-col items-center md:items-start gap-1">
-                        <p>© 2026 ICCAIML. All rights reserved.</p>
+                        <p>© 2026 INCIP. All rights reserved.</p>
                         <p className="font-medium text-slate-400">Developed by <span className="text-primary/70">Om Vanwari</span></p>
                     </div>
                     <div className="space-x-4 mt-4 md:mt-0">

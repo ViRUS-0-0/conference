@@ -6,7 +6,7 @@ export default function About() {
         {
             icon: <BookOpen className="w-8 h-8 text-primary" />,
             title: "Promote Research",
-            desc: "Fostering advanced research and computational applications in AI and Machine Learning domains.",
+            desc: "Fostering advanced research and computational applications in Next-Generation Communication and Information Processing.",
         },
         {
             icon: <Users className="w-8 h-8 text-primary" />,
@@ -21,7 +21,7 @@ export default function About() {
         {
             icon: <Lightbulb className="w-8 h-8 text-primary" />,
             title: "Real-world Solutions",
-            desc: "Addressing practical challenges and discussing encountered solutions in computing.",
+            desc: "Addressing practical challenges and discussing encountered solutions in communication and information processing.",
         },
     ];
 
@@ -56,13 +56,13 @@ export default function About() {
                         className="space-y-6 text-slate-600 text-lg leading-relaxed"
                     >
                         <p className="font-medium text-slate-800 text-xl">
-                            Welcome to the 2nd International Conference on Computation of Artificial Intelligence & Machine Learning (ICCAIML-2026).
+                            Welcome to the 2nd International Conference on Next Generation Communication & Information Processing (INCIP-2026).
                         </p>
                         <p>
-                            ICCAIML aims to bring together leading academic scientists, researchers, and research scholars to exchange and share their experiences and research results on all aspects of Artificial Intelligence and Machine Learning.
+                            INCIP aims to bring together leading academic scientists, researchers, and research scholars to exchange and share their experiences and research results on all aspects of Next-Generation Communication and Information Processing.
                         </p>
-                        <a href="https://jaipur.manipal.edu/" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold tracking-wide uppercase hover:underline underline-offset-4 mt-4 inline-flex items-center">
-                            Read More About Manipal University Jaipur
+                        <a href="https://www.cuk.ac.in/#/home" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold tracking-wide uppercase hover:underline underline-offset-4 mt-4 inline-flex items-center">
+                            Read More About Central University of Karnataka
                             <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                             </svg>
@@ -104,27 +104,21 @@ export default function About() {
                     {/* Content Side */}
                     <div className="p-10 md:p-16 flex-1 flex flex-col justify-center relative z-10">
                         <span className="text-blue-400 font-mono text-sm uppercase tracking-widest mb-4 block">The Venue</span>
-                        <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">Manipal University Jaipur</h3>
+                        <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">Central University of Karnataka</h3>
                         <p className="text-slate-300 mb-8 leading-relaxed">
-                            Manipal University Jaipur (MUJ) was launched in 2011 on an invitation from the Government of Rajasthan.
-                            The university is situated on 122 acres of modern campus and is recognized for its academic excellence,
-                            innovative research, and vibrant student life. It provides an excellent environment for academic conferences
-                            and networking.
+                            The Central University of Karnataka (CUK), established in 2009 by an Act of Parliament (No. 3 of 2009) in Kalaburagi, Karnataka, is one of 16 new Central Universities created under the UGC XI Plan to enhance equity and access to quality higher education in underdeveloped regions. Situated on a 654-acre campus, CUK provides an excellent environment for academic conferences and networking.
                         </p>
-                        <a href="https://jaipur.manipal.edu/" target="_blank" rel="noreferrer" className="inline-flex items-center text-white bg-white/10 hover:bg-white/20 px-6 py-3 rounded-lg font-medium transition-colors w-fit border border-white/10 backdrop-blur-sm">
+                        <a href="https://www.cuk.ac.in/#/home" target="_blank" rel="noreferrer" className="inline-flex items-center text-white bg-white/10 hover:bg-white/20 px-6 py-3 rounded-lg font-medium transition-colors w-fit border border-white/10 backdrop-blur-sm">
                             Explore Campus
                         </a>
                     </div>
 
-                    {/* Campus Video */}
+                    {/* Campus Image */}
                     <div className="w-full md:w-5/12 min-h-[300px] relative overflow-hidden">
-                        <video
-                            autoPlay
-                            loop
-                            muted
-                            playsInline
+                        <img
+                            src="/conference/pictures/About/image.png"
+                            alt="Central University of Karnataka Campus"
                             className="absolute inset-0 w-full h-full object-cover"
-                            src="/conference/videos/MUJ_Venue.webm"
                         />
                         {/* Subtle overlay for blending */}
                         <div className="absolute inset-0 bg-gradient-to-r from-slate-900/40 to-transparent pointer-events-none"></div>

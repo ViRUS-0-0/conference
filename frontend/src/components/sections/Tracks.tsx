@@ -1,73 +1,50 @@
 import { motion } from "framer-motion";
-import { Cpu, Network, Database, BrainCircuit, Bot, LineChart } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Cpu, Network, Database, Radio } from "lucide-react";
 
 export default function Tracks() {
     const tracks = [
         {
-            title: "Artificial Intelligence",
-            icon: <BrainCircuit className="w-8 h-8 text-primary" />,
-            topics: [
-                "Natural Language Processing",
-                "Knowledge-based Systems",
-                "Heuristic Search",
-                "Explainable AI",
-                "AI for Cybersecurity",
-            ],
-        },
-        {
-            title: "Machine Learning",
+            title: "Advance Communication",
             icon: <Network className="w-8 h-8 text-primary" />,
             topics: [
-                "Supervised & Unsupervised Learning",
-                "Deep Learning Models",
-                "Reinforcement Learning",
-                "Transfer Learning",
-                "Federated Learning",
+                "Unmanned Aerial Vehicle Networks",
+                "5G Networks and IoT",
+                "Future Internet Architecture",
+                "Disaster Recovery of Networks",
+                "Mobile Networks",
             ],
         },
         {
-            title: "Data Science & Big Data",
+            title: "Information Processing",
             icon: <Database className="w-8 h-8 text-primary" />,
             topics: [
-                "Data Mining & Warehouse",
-                "Big Data Analytics",
-                "Predictive Modeling",
-                "Data Visualization Techniques",
-                "Real-time Data Processing",
+                "Computational Intelligence",
+                "Ambient Intelligence",
+                "Deep Learning",
+                "Recommendation Systems",
+                "Intelligent Systems",
             ],
         },
         {
-            title: "Computer Vision",
+            title: "Smart Systems",
             icon: <Cpu className="w-8 h-8 text-primary" />,
             topics: [
-                "Image & Video Processing",
-                "Object Detection/Recognition",
-                "Medical Image Analysis",
-                "Facial Recognition",
-                "Augmented & Virtual Reality",
+                "Internet of Things",
+                "Smart healthcare systems",
+                "Energy Efficient Infrastructure",
+                "Intelligent Infrastructure and Transportation",
+                "Applications of Deep Learning for building Smart Systems"
             ],
         },
         {
-            title: "Robotics & Automation",
-            icon: <Bot className="w-8 h-8 text-primary" />,
+            title: "RF, Microwave and mm-Wave",
+            icon: <Radio className="w-8 h-8 text-primary" />,
             topics: [
-                "Autonomous Vehicles",
-                "Human-Robot Interaction",
-                "Swarm Robotics",
-                "Industrial Automation",
-                "Cognitive Robotics",
-            ],
-        },
-        {
-            title: "Applied AI Methodologies",
-            icon: <LineChart className="w-8 h-8 text-primary" />,
-            topics: [
-                "AI in Finance",
-                "AI in Healthcare",
-                "Smart Cities & IoT",
-                "AI in Education",
-                "AI in Agriculture",
+                "Phased Array Antennas",
+                "Reflector and Reflect-array Antennas",
+                "Planar Antennas",
+                "Frequency-selective Surfaces",
+                "Satellite Antennas and Payloads"
             ],
         },
     ];
@@ -120,7 +97,7 @@ export default function Tracks() {
                     initial="hidden"
                     whileInView="show"
                     viewport={{ once: true, margin: "-100px" }}
-                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+                    className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto"
                 >
                     {tracks.map((track, i) => (
                         <motion.div
@@ -152,9 +129,9 @@ export default function Tracks() {
                     viewport={{ once: true }}
                     className="mt-16 text-center"
                 >
-                    <Link to="/call-for-papers" className="inline-block px-8 py-4 bg-slate-900 text-white rounded-lg font-medium tracking-wide hover:bg-primary transition-colors duration-300 shadow-md">
-                        Download Full CFP (PDF)
-                    </Link>
+                    <a href="/brochure.pdf" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-4 bg-slate-900 text-white rounded-lg font-medium tracking-wide hover:bg-primary transition-colors duration-300 shadow-md">
+                        Download Brochure
+                    </a>
                 </motion.div>
             </div>
         </section>

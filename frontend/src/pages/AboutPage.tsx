@@ -7,17 +7,17 @@ export default function AboutPage() {
         {
             icon: <Calendar className="w-6 h-6 text-primary" />,
             label: "CONFERENCE DATES",
-            value: "November 19–21, 2026"
+            value: "August 20–21, 2026"
         },
         {
             icon: <MapPin className="w-6 h-6 text-primary" />,
             label: "VENUE",
-            value: "Manipal University Jaipur"
+            value: "Central University of Karnataka"
         },
         {
             icon: <Award className="w-6 h-6 text-primary" />,
             label: "PUBLICATION",
-            value: "Springer",
+            value: "IEEE Xplore",
             sub: "Scopus"
         }
     ];
@@ -27,13 +27,13 @@ export default function AboutPage() {
             id: "about-conf",
             icon: <BookOpen className="w-6 h-6" />,
             title: "About the Conference",
-            content: "The 2nd International Conference on Computation of Artificial Intelligence & Machine Learning (ICCAIML'26) will provide an outstanding international arena for the exchange of information and findings in the theory, methodology, and applications of Artificial Intelligence and Machine Learning."
+            content: "The 2nd International Conference on Next Generation Communication & Information Processing (INCIP'26) will provide an outstanding arena for the exchange of information and findings in information computing and advanced communication."
         },
         {
-            id: "why-iccaiml",
+            id: "why-incip",
             icon: <Zap className="w-6 h-6" />,
-            title: "Why ICCAIML?",
-            content: "A focused, high-quality forum for AI/ML research and applied innovation. This conference gives opportunity for attendees from many fields to discuss fresh ideas and application experiences face-to-face."
+            title: "Why INCIP?",
+            content: "A focused, high-quality forum for AI, ML, and Next-Gen Communication research. This conference gives attendees the opportunity to discuss fresh ideas and application experiences face-to-face."
         },
         {
             id: "impact",
@@ -43,11 +43,7 @@ export default function AboutPage() {
         }
     ];
 
-    const jaipurSites = [
-        { name: "Amber Fort", sub: "Historic Fort & Palace", img: "/conference/pictures/amber-fort.png" },
-        { name: "Hawa Mahal", sub: "Palace of Winds", img: "/conference/pictures/hawa-mahal.png" },
-        { name: "City Palace", sub: "Royal Residence", img: "/conference/pictures/city-palace.png" }
-    ];
+
 
     return (
         <div className="w-full pt-32 pb-20 overflow-hidden bg-slate-50/50">
@@ -68,7 +64,7 @@ export default function AboutPage() {
                         animate={{ opacity: 1, y: 0 }}
                         className="text-4xl md:text-6xl font-bold mb-6"
                     >
-                        About <span className="text-primary italic">ICCAIML'26</span>
+                        About <span className="text-primary italic">INCIP'26</span>
                     </motion.h1>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
@@ -76,7 +72,7 @@ export default function AboutPage() {
                         transition={{ delay: 0.1 }}
                         className="text-slate-500 max-w-2xl mx-auto text-lg"
                     >
-                        International Conference on Computation of Artificial Intelligence & Machine Learning
+                        International Conference on Next Generation Communication & Information Processing
                     </motion.p>
                 </div>
 
@@ -133,7 +129,7 @@ export default function AboutPage() {
                     ))}
                 </div>
 
-                {/* MUJ Section */}
+                {/* CUK Section */}
                 <motion.div
                     initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -148,76 +144,29 @@ export default function AboutPage() {
                                 </div>
                                 <span className="font-bold text-sm tracking-widest text-slate-400 uppercase">Host Institution</span>
                             </div>
-                            <h2 className="text-3xl md:text-4xl font-black italic">About Manipal <span className="text-blue-600">University</span> Jaipur</h2>
+                            <h2 className="text-3xl md:text-4xl font-black italic">About Central <span className="text-blue-600">University</span> of Karnataka</h2>
                             <p className="text-slate-600 leading-relaxed">
-                                Manipal University Jaipur is a premier institution known for academic excellence, cutting-edge research, and state-of-the-art infrastructure. With a focus on innovation and industry collaboration, MUJ provides an ideal setting for fostering technological advancement and academic discourse. The university's commitment to research in AI, Machine Learning, and emerging technologies makes it the perfect venue for ICCAIML'26.
+                                The Central University of Karnataka (CUK), established in 2009 by an Act of Parliament (No. 3 of 2009) in Kalaburagi, Karnataka, is one of 16 new Central Universities created under the UGC XI Plan to enhance equity and access to quality higher education in underdeveloped regions. Situated on a 654-acre campus, CUK is fully committed to excellence in academics and impactful research.
                             </p>
                             <a
-                                href="https://jaipur.manipal.edu/"
+                                href="https://www.cuk.ac.in/#/home"
                                 target="_blank"
                                 className="inline-flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all duration-300"
                             >
-                                LEARN MORE ABOUT MUJ
+                                LEARN MORE ABOUT CUK
                                 <ExternalLink className="w-4 h-4" />
                             </a>
                         </div>
                         <div className="lg:w-1/2 relative">
-                            <div className="aspect-video rounded-3xl overflow-hidden shadow-2xl">
-                                <video
-                                    autoPlay
-                                    loop
-                                    muted
-                                    playsInline
-                                    className="w-full h-full object-cover"
-                                    src="/conference/videos/MUJ_Venue.webm"
-                                />
+                            <div className="aspect-video rounded-3xl overflow-hidden shadow-2xl flex items-center justify-center bg-slate-100 text-slate-400">
+                                Campus Video Pending
                             </div>
                             <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary rounded-full blur-3xl opacity-20 -z-10"></div>
                         </div>
                     </div>
                 </motion.div>
 
-                {/* About Jaipur Section */}
-                <div className="mb-24">
-                    <motion.div
-                        initial={{ opacity: 0, y: 40 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        className="text-center mb-16"
-                    >
-                        <span className="text-primary font-bold text-sm tracking-[0.3em] uppercase mb-4 block">The Pink City</span>
-                        <h2 className="text-3xl md:text-5xl font-black uppercase italic mb-6">Explore <span className="text-primary">Jaipur</span></h2>
-                        <p className="max-w-3xl mx-auto text-slate-500 text-lg">
-                            Jaipur, the capital of Rajasthan, is a vibrant blend of rich history, magnificent architecture, and modern innovation. Known as the "Pink City" for its distinctive terracotta-colored buildings, Jaipur offers visitors an unforgettable cultural experience alongside world-class conference facilities.
-                        </p>
-                    </motion.div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        {jaipurSites.map((site, idx) => (
-                            <motion.div
-                                key={idx}
-                                initial={{ opacity: 0, scale: 0.95 }}
-                                whileInView={{ opacity: 1, scale: 1 }}
-                                viewport={{ once: true }}
-                                transition={{ delay: idx * 0.1 }}
-                                className="group relative rounded-3xl overflow-hidden shadow-lg border border-slate-200 bg-white"
-                            >
-                                <div className="aspect-[4/3] overflow-hidden">
-                                    <img
-                                        src={site.img}
-                                        alt={site.name}
-                                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                                    />
-                                </div>
-                                <div className="p-6 text-center">
-                                    <h4 className="text-lg font-bold text-slate-900 mb-1 group-hover:text-primary transition-colors">{site.name}</h4>
-                                    <p className="text-xs text-slate-400 font-medium italic mb-4">{site.sub}</p>
-                                    <div className="h-0.5 w-12 bg-primary/20 mx-auto group-hover:w-full transition-all duration-300"></div>
-                                </div>
-                            </motion.div>
-                        ))}
-                    </div>
-                </div>
 
                 {/* Sub-CTA Final */}
                 <motion.div

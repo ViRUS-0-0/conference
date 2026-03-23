@@ -2,12 +2,11 @@ import { motion } from "framer-motion";
 
 export default function TimelinePage() {
     const dates = [
-        { date: "January 07, 2026", title: "Call for Papers Opens" },
-        { date: "April 15, 2026", title: "Paper Submission Deadline" },
-        { date: "June 15, 2026", title: "Notification of Acceptance" },
-        { date: "July 15, 2026", title: "Camera-Ready Submission" },
-        { date: "October 15, 2026", title: "Early Registration Ends" },
-        { date: "November 19-21, 2026", title: "Conference Dates" },
+        { date: "December 01, 2025", title: "Call for Papers Opens" },
+        { date: "April 01, 2026", title: "Paper Submission Deadline" },
+        { date: "May 01, 2026", title: "Notification of Acceptance" },
+        { date: "June 01, 2026", title: "Registration Deadline" },
+        { date: "August 20-21, 2026", title: "Conference Dates" },
     ];
 
     return (
@@ -25,7 +24,7 @@ export default function TimelinePage() {
                 transition={{ delay: 0.2 }}
                 className="text-slate-500 mb-16 text-center max-w-2xl"
             >
-                Mark your calendars. Below are the key milestones leading up to ICCAIML 2026.
+                Mark your calendars. Below are the key milestones leading up to INCIP 2026.
             </motion.p>
 
             <div className="w-full max-w-4xl relative">
