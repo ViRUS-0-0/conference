@@ -1,131 +1,47 @@
 import { motion } from "framer-motion";
-import { BookOpen, Users, Globe2, Lightbulb } from "lucide-react";
+import { CalendarDays, MapPinned, Sparkles } from "lucide-react";
 
 export default function About() {
-    const cards = [
-        {
-            icon: <BookOpen className="w-8 h-8 text-primary" />,
-            title: "Promote Research",
-            desc: "Fostering advanced research and computational applications in Next-Generation Communication and Information Processing.",
-        },
-        {
-            icon: <Users className="w-8 h-8 text-primary" />,
-            title: "Global Networking",
-            desc: "Connecting researchers, academicians, and industry experts from across the globe.",
-        },
-        {
-            icon: <Globe2 className="w-8 h-8 text-primary" />,
-            title: "Knowledge Exchange",
-            desc: "Providing a premier interdisciplinary platform to present and discuss innovations.",
-        },
-        {
-            icon: <Lightbulb className="w-8 h-8 text-primary" />,
-            title: "Real-world Solutions",
-            desc: "Addressing practical challenges and discussing encountered solutions in communication and information processing.",
-        },
-    ];
+  return (
+    <section id="about" className="relative w-full bg-white py-12 md:py-20">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 items-start gap-12 lg:grid-cols-12 lg:gap-16">
+          
+          {/* Left Column: Logo */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            className="flex justify-center lg:col-span-3 lg:justify-start pt-2"
+          >
+            <img
+              src="/conference/pictures/logo.jpeg"
+              alt="Central University of Karnataka Logo"
+              className="w-48 h-48 object-contain md:w-56 md:h-56"
+            />
+          </motion.div>
 
-    return (
-        <section id="about" className="w-full py-24 relative overflow-hidden">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                {/* Section Header */}
-                <div className="text-center mb-16">
-                    <motion.h2
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        className="text-3xl md:text-5xl font-bold text-slate-800 mb-4"
-                    >
-                        About The <span className="text-primary">Conference</span>
-                    </motion.h2>
-                    <motion.div
-                        initial={{ opacity: 0, width: 0 }}
-                        whileInView={{ opacity: 1, width: "100%" }}
-                        viewport={{ once: true }}
-                        className="h-1 w-24 bg-primary mx-auto rounded-full"
-                    />
-                </div>
-
-                {/* Content & Objectives */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-24">
-                    <motion.div
-                        initial={{ opacity: 0, x: -30 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.6 }}
-                        className="space-y-6 text-slate-600 text-lg leading-relaxed"
-                    >
-                        <p className="font-medium text-slate-800 text-xl">
-                            Welcome to the 2nd International Conference on Next Generation Communication & Information Processing (INCIP-2026).
-                        </p>
-                        <p>
-                            INCIP aims to bring together leading academic scientists, researchers, and research scholars to exchange and share their experiences and research results on all aspects of Next-Generation Communication and Information Processing.
-                        </p>
-                        <a href="https://www.cuk.ac.in/#/home" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold tracking-wide uppercase hover:underline underline-offset-4 mt-4 inline-flex items-center">
-                            Read More About Central University of Karnataka
-                            <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                            </svg>
-                        </a>
-                    </motion.div>
-
-                    {/* Cards Grid */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 relative">
-                        {/* Background glowing blob */}
-                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-blue-400/20 blur-3xl rounded-full z-0 pointer-events-none"></div>
-
-                        {cards.map((card, index) => (
-                            <motion.div
-                                key={index}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ duration: 0.5, delay: index * 0.1 }}
-                                className="glass p-8 rounded-2xl relative z-10 hover:-translate-y-1 transition-transform duration-300"
-                            >
-                                <div className="bg-blue-50 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
-                                    {card.icon}
-                                </div>
-                                <h3 className="text-xl font-bold text-slate-800 mb-3">{card.title}</h3>
-                                <p className="text-sm text-slate-500 leading-relaxed">{card.desc}</p>
-                            </motion.div>
-                        ))}
-                    </div>
-                </div>
-
-                {/* About the University Section */}
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.7 }}
-                    className="bg-slate-900 rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row relative"
-                >
-                    {/* Content Side */}
-                    <div className="p-10 md:p-16 flex-1 flex flex-col justify-center relative z-10">
-                        <span className="text-blue-400 font-mono text-sm uppercase tracking-widest mb-4 block">The Venue</span>
-                        <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">Central University of Karnataka</h3>
-                        <p className="text-slate-300 mb-8 leading-relaxed">
-                            The Central University of Karnataka (CUK), established in 2009 by an Act of Parliament (No. 3 of 2009) in Kalaburagi, Karnataka, is one of 16 new Central Universities created under the UGC XI Plan to enhance equity and access to quality higher education in underdeveloped regions. Situated on a 654-acre campus, CUK provides an excellent environment for academic conferences and networking.
-                        </p>
-                        <a href="https://www.cuk.ac.in/#/home" target="_blank" rel="noreferrer" className="inline-flex items-center text-white bg-white/10 hover:bg-white/20 px-6 py-3 rounded-lg font-medium transition-colors w-fit border border-white/10 backdrop-blur-sm">
-                            Explore Campus
-                        </a>
-                    </div>
-
-                    {/* Campus Image */}
-                    <div className="w-full md:w-5/12 min-h-[300px] relative overflow-hidden">
-                        <img
-                            src="/conference/pictures/About/image.png"
-                            alt="Central University of Karnataka Campus"
-                            className="absolute inset-0 w-full h-full object-cover"
-                        />
-                        {/* Subtle overlay for blending */}
-                        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/40 to-transparent pointer-events-none"></div>
-                    </div>
-                </motion.div>
-
+          {/* Right Column: Content */}
+          <div className="lg:col-span-9 space-y-6">
+            <div className="space-y-2">
+              <h2 className="text-3xl font-bold text-slate-900">
+                About Conference
+              </h2>
+              <div className="h-0.5 w-16 bg-blue-100" />
             </div>
-        </section>
-    );
+
+            <div className="text-slate-600 leading-relaxed text-base md:text-lg">
+              <p>
+                The <span className="font-semibold text-slate-800">Second International Conference on Next Generation Communication & Information Processing (INCIP-2026)</span> is organized by the <span className="font-semibold text-slate-800">Department of Electronics & Communication Engineering, Central University of Karnataka, Kalaburagi.</span> 
+                In the information and communication technology (ICT) sector and organizations, next-generation communication and information computing have become "Big Buzz Words" in recent years. The advent of more advanced communication and information processing is finding its new way into our day-to-day application areas like smart homes and automation, automotive, healthcare, logistics, finance, and the rest of the smart city applications.
+              </p>
+              <p className="mt-4">
+                The purpose of holding this conference (INCIP) is to bring together, on a common platform, scientists, engineers, and researchers along with other eminent academic personalities in communication, information computing, and other related topics. The participants would get ample scope to make exchanges of views, ideas, and thoughts besides the presentation of papers and interact amongst themselves on recent research in the area of the conference themes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }

@@ -10,12 +10,18 @@ export default function Navbar() {
     const links = [
         { name: "HOME", path: "/" },
         { name: "ABOUT", path: "/about" },
-        { 
+        {
             name: "AUTHOR'S INFO", 
             dropdown: [
                 { name: "Call for Papers", path: "/call-for-papers" },
                 { name: "Paper Submissions", path: "/paper-submissions" },
                 { name: "Brochure", path: "/brochure.pdf", external: true }
+            ]
+        },
+        {
+            name: "PREVIOUS EDITION",
+            dropdown: [
+                { name: "INCIP 2025", path: "/previous-edition/incip-2025" }
             ]
         },
         { name: "TIMELINE", path: "/timeline" },

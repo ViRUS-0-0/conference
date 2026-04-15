@@ -13,6 +13,7 @@ import RegistrationPage from "./pages/RegistrationPage";
 import OrganizingCommitteePage from "./pages/OrganizingCommitteePage";
 import TechnicalProgramCommitteePage from "./pages/TechnicalProgramCommitteePage";
 import AdvisoryCommitteePage from "./pages/AdvisoryCommitteePage";
+import PreviousEdition2025Page from "./pages/PreviousEdition2025Page";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path="/people/organizing-committee" element={<OrganizingCommitteePage />} />
           <Route path="/people/technical-program-committee" element={<TechnicalProgramCommitteePage />} />
           <Route path="/people/advisory-committee" element={<AdvisoryCommitteePage />} />
+          <Route path="/previous-edition/incip-2025" element={<PreviousEdition2025Page />} />
         </Routes>
       </Layout>
     </>

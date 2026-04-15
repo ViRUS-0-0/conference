@@ -32,32 +32,14 @@ export default function Committee() {
     const committeeSections = [
         {
             title: "Organizing Committee",
-            bgPrimary: "bg-primary/20",
-            bgSecondary: "bg-purple-500/20",
-            members: [
-                { name: "Prof. Pramod Kumar", role: "General Chair" },
-                { name: "Dr. N. C. Pradhan", role: "Organizing Secretary" }
-            ],
             link: "/people/organizing-committee"
         },
         {
             title: "Technical Program Committee",
-            bgPrimary: "bg-blue-500/20",
-            bgSecondary: "bg-emerald-500/20",
-            members: [
-                { name: "Dr. Álvaro Rocha", role: "University of Lisbon" },
-                { name: "Dr. Anand Nayyar", role: "Duy Tan University" }
-            ],
             link: "/people/technical-program-committee"
         },
         {
             title: "Advisory Committee",
-            bgPrimary: "bg-amber-500/20",
-            bgSecondary: "bg-rose-500/20",
-            members: [
-                { name: "Dr. Goutam Chattopadhyay", role: "JPL NASA, USA" },
-                { name: "Prof. Chinmoy Saha", role: "IIST, Kerala" }
-            ],
             link: "/people/advisory-committee"
         }
     ];
@@ -117,45 +99,26 @@ export default function Committee() {
                     ))}
                 </div>
 
-                {/* Committees List */}
-                <div className="space-y-10 max-w-5xl mx-auto">
-                    {committeeSections.map((section, idx) => (
-                        <motion.div 
-                            key={idx} 
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: idx * 0.1 }}
-                            className="bg-slate-900 rounded-3xl p-8 md:p-12 text-center overflow-hidden relative shadow-lg"
-                        >
-                            {/* Background elements */}
-                            <div className={`absolute top-0 right-0 w-64 h-64 ${section.bgPrimary} blur-[100px] rounded-full pointer-events-none`}></div>
-                            <div className={`absolute bottom-0 left-0 w-64 h-64 ${section.bgSecondary} blur-[100px] rounded-full pointer-events-none`}></div>
-
-                            <h3 className="text-2xl md:text-3xl font-bold text-white mb-10 relative z-10">
+                {/* Committee Navigation */}
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    className="max-w-5xl mx-auto"
+                >
+                    <div className="flex flex-wrap items-center justify-center gap-4">
+                        {committeeSections.map((section) => (
+                            <Link
+                                key={section.link}
+                                to={section.link}
+                                onClick={() => window.scrollTo(0, 0)}
+                                className="inline-flex items-center rounded-full border border-primary/20 bg-white px-6 py-3 text-sm font-semibold text-slate-700 shadow-sm transition-all hover:-translate-y-0.5 hover:border-primary/40 hover:text-primary hover:shadow"
+                            >
                                 {section.title}
-                            </h3>
-
-                            <div className="flex justify-center flex-wrap gap-6 relative z-10 mb-10">
-                                {section.members.map((member, i) => (
-                                    <div
-                                        key={i}
-                                        className="bg-white/5 border border-white/10 backdrop-blur-sm rounded-xl p-6 min-w-[250px] shadow-sm hover:bg-white/10 transition-colors"
-                                    >
-                                        <h4 className="text-lg font-semibold text-white mb-2">{member.name}</h4>
-                                        <p className="text-sm text-blue-300 font-medium">{member.role}</p>
-                                    </div>
-                                ))}
-                            </div>
-
-                            <div className="relative z-10 block">
-                                <Link to={section.link} onClick={() => window.scrollTo(0,0)} className="inline-block text-slate-300 hover:text-white border-b border-slate-500 hover:border-white transition-colors pb-1 text-sm font-medium tracking-wide">
-                                    View Full Committee List →
-                                </Link>
-                            </div>
-                        </motion.div>
-                    ))}
-                </div>
+                            </Link>
+                        ))}
+                    </div>
+                </motion.div>
 
             </div>
         </section>

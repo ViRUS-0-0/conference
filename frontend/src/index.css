@@ -2,14 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 @layer base {
   :root {
     --background: 210 40% 98%;
     /* #f8fafc */
     --foreground: 222.2 84% 4.9%;
 
-    --primary: 18.5 82.6% 42.9%;
-    /* #C84B13 */
+    --primary: 225 61% 56%;
+    /* #4c6fd4 */
     --primary-foreground: 210 40% 98%;
 
     --radius: 0.5rem;
@@ -36,6 +38,6 @@
 /* Plexus Background Gradient */
 .bg-plexus {
   background:
-    radial-gradient(circle at 15% 50%, rgba(200, 75, 19, 0.05), transparent 25%),
-    radial-gradient(circle at 85% 30%, rgba(200, 75, 19, 0.08), transparent 25%);
+    radial-gradient(circle at 15% 50%, rgba(76, 111, 212, 0.05), transparent 25%),
+    radial-gradient(circle at 85% 30%, rgba(76, 111, 212, 0.08), transparent 25%);
 }
