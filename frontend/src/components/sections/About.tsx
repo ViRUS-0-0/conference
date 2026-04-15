@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { CalendarDays, MapPinned, Sparkles } from "lucide-react";
 
 export default function About() {
   return (
