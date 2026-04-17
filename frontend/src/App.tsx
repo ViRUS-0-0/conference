@@ -7,7 +7,6 @@ import CallForPapersPage from "./pages/CallForPapersPage";
 import CommitteePage from "./pages/CommitteePage";
 import TimelinePage from "./pages/TimelinePage";
 import PaperSubmissionsPage from "./pages/PaperSubmissionsPage";
-import GalleryPage from "./pages/GalleryPage";
 import ContactPage from "./pages/ContactPage";
 import RegistrationPage from "./pages/RegistrationPage";
 import OrganizingCommitteePage from "./pages/OrganizingCommitteePage";
