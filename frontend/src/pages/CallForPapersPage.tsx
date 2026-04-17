@@ -63,7 +63,7 @@ export default function CallForPapersPage() {
     ];
 
     return (
-        <div className="w-full min-h-[80vh] bg-slate-50 py-20 px-4 relative">
+        <div className="w-full min-h-[80vh]  py-20 px-4 relative">
             <div className="absolute inset-0 bg-plexus opacity-30 z-0"></div>
 
             <div className="max-w-4xl mx-auto relative z-10">

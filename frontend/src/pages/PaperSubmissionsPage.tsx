@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function PaperSubmissionsPage() {
     return (
-        <div className="w-full py-20 px-4 min-h-screen bg-slate-50 relative">
+        <div className="w-full py-20 px-4 min-h-screen  relative">
             {/* Background Decorations */}
             <div className="absolute inset-0 bg-plexus opacity-30 z-0 pointer-events-none"></div>
 
@@ -50,7 +50,7 @@ export default function PaperSubmissionsPage() {
                             All papers are required to be prepared and submitted in the <strong>IEEE Standard two-column conference format</strong> of A4 size in English. Papers must be four to six pages in length, including texts, Figures, photographs and references. Any submitted paper that exceeds six pages will be rejected. The first page must include the title of the paper, author(s), affiliations, address and text. Please do not include page numbers on submitted documents. Failing to conform to the standard format will result in rejection. 
                         </p>
 
-                        <div className="bg-slate-50 rounded-xl p-5 mb-8 border border-slate-200">
+                        <div className=" rounded-xl p-5 mb-8 border border-slate-200">
                             <p className="font-semibold text-slate-800 text-base mb-2">Paper Template:</p>
                             <p className="text-sm leading-relaxed mb-3">The authors are required to use the standard IEEE manuscript template for conferences. The Microsoft Word template can be downloaded from the IEEE conference template page:</p>
                             <a href="https://www.ieee.org/conferences/publishing/templates.html" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-sm px-4 py-2 bg-slate-800 text-white rounded-lg hover:bg-slate-700 transition-colors">

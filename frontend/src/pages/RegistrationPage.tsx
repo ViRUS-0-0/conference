@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function RegistrationPage() {
     return (
-        <div className="w-full flex justify-center py-20 px-4 min-h-[80vh] bg-slate-50 relative">
+        <div className="w-full flex justify-center py-20 px-4 min-h-[80vh]  relative">
             <div className="absolute inset-0 bg-plexus opacity-30 z-0 pointer-events-none"></div>
 
             <div className="max-w-5xl w-full relative z-10">
@@ -35,12 +35,12 @@ export default function RegistrationPage() {
                     <div className="overflow-x-auto rounded-xl border border-slate-100 mb-8 w-full max-w-full">
                         <table className="w-full text-left border-collapse min-w-[700px]">
                             <thead>
-                                <tr className="bg-slate-50 text-slate-700 font-bold text-sm uppercase tracking-wider">
+                                <tr className=" text-slate-700 font-bold text-sm uppercase tracking-wider">
                                     <th className="p-4 md:p-5 border-b border-slate-200 border-r" rowSpan={2}>Delegates Category</th>
                                     <th className="p-4 md:p-5 border-b border-slate-200 text-center border-r" colSpan={2}>Indian (INR)</th>
                                     <th className="p-4 md:p-5 border-b border-slate-200 text-center" colSpan={2}>International (USD)</th>
                                 </tr>
-                                <tr className="bg-slate-50/50 text-slate-600 font-medium text-xs md:text-sm">
+                                <tr className="/50 text-slate-600 font-medium text-xs md:text-sm">
                                     <th className="px-3 py-3 md:p-4 border-b border-slate-200 border-r text-center whitespace-nowrap">IEEE Member</th>
                                     <th className="px-3 py-3 md:p-4 border-b border-slate-200 border-r text-center whitespace-nowrap">Non-IEEE Member</th>
                                     <th className="px-3 py-3 md:p-4 border-b border-slate-200 border-r text-center whitespace-nowrap">IEEE Member</th>
@@ -78,7 +78,7 @@ export default function RegistrationPage() {
 
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-4">
                         {/* Bank Details */}
-                        <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200">
+                        <div className=" rounded-2xl p-6 border border-slate-200">
                             <h4 className="text-lg font-bold text-slate-800 mb-6 flex items-center pb-2 border-b border-slate-200">
                                 <svg className="w-5 h-5 mr-2 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" /></svg>
                                 Bank Account Details

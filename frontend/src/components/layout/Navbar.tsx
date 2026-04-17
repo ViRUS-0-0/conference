@@ -25,8 +25,14 @@ export default function Navbar() {
             ]
         },
         { name: "TIMELINE", path: "/timeline" },
-        { name: "PEOPLE", path: "/people" },
-        { name: "GALLERY", path: "/gallery" },
+        {
+            name: "COMMITTEE",
+            dropdown: [
+                { name: "Organizing Committee", path: "/committee/organizing-committee" },
+                { name: "Technical Program Committee", path: "/committee/technical-program-committee" },
+                { name: "Advisory Committee", path: "/committee/advisory-committee" }
+            ]
+        },
         { name: "CONTACT", path: "/contact" },
     ];
 
@@ -108,7 +114,7 @@ export default function Navbar() {
                         <div className="md:hidden flex items-center">
                             <button
                                 onClick={() => setIsOpen(!isOpen)}
-                                className="text-slate-600 hover:text-primary focus:outline-none p-2 bg-slate-50 rounded-full"
+                                className="text-slate-600 hover:text-primary focus:outline-none p-2  rounded-full"
                             >
                                 {isOpen ? <X size={20} /> : <Menu size={20} />}
                             </button>

@@ -4,7 +4,7 @@ import ScrollToTop from "./components/ui/ScrollToTop";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import CallForPapersPage from "./pages/CallForPapersPage";
-import PeoplePage from "./pages/PeoplePage";
+import CommitteePage from "./pages/CommitteePage";
 import TimelinePage from "./pages/TimelinePage";
 import PaperSubmissionsPage from "./pages/PaperSubmissionsPage";
 import GalleryPage from "./pages/GalleryPage";
@@ -25,14 +25,13 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/call-for-papers" element={<CallForPapersPage />} />
           <Route path="/paper-submissions" element={<PaperSubmissionsPage />} />
-          <Route path="/people" element={<PeoplePage />} />
+          <Route path="/committee" element={<CommitteePage />} />
           <Route path="/timeline" element={<TimelinePage />} />
-          <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/registration" element={<RegistrationPage />} />
-          <Route path="/people/organizing-committee" element={<OrganizingCommitteePage />} />
-          <Route path="/people/technical-program-committee" element={<TechnicalProgramCommitteePage />} />
-          <Route path="/people/advisory-committee" element={<AdvisoryCommitteePage />} />
+          <Route path="/committee/organizing-committee" element={<OrganizingCommitteePage />} />
+          <Route path="/committee/technical-program-committee" element={<TechnicalProgramCommitteePage />} />
+          <Route path="/committee/advisory-committee" element={<AdvisoryCommitteePage />} />
           <Route path="/previous-edition/incip-2025" element={<PreviousEdition2025Page />} />
         </Routes>
       </Layout>

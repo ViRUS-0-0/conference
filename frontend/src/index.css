@@ -6,8 +6,8 @@
 
 @layer base {
   :root {
-    --background: 210 40% 98%;
-    /* #f8fafc */
+    --background: 0 0% 100%;
+    /* #ffffff */
     --foreground: 222.2 84% 4.9%;
 
     --primary: 225 61% 56%;
@@ -22,9 +22,31 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-white text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
     overflow-x: hidden;
+  }
+}
+
+@layer utilities {
+  /* Base grid layer */
+  .grid-base {
+    background-image: 
+      linear-gradient(#f1f5f9 1.5px, transparent 1.5px),
+      linear-gradient(90deg, #f1f5f9 1.5px, transparent 1.5px);
+    background-size: 60px 60px;
+    background-position: center;
+  }
+
+  /* Spotlight grid layer */
+  .grid-spotlight {
+    background-image: 
+      linear-gradient(#cbd5e1 1.5px, transparent 1.5px),
+      linear-gradient(90deg, #cbd5e1 1.5px, transparent 1.5px);
+    background-size: 60px 60px;
+    background-position: center;
+    mask-image: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), black 0%, transparent 350px);
+    -webkit-mask-image: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), black 0%, transparent 350px);
   }
 }
 

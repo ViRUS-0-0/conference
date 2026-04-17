@@ -1,5 +1,6 @@
-import { motion } from "framer-motion";
-import { Calendar, MapPin, BookOpen, Images, ExternalLink } from "lucide-react";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Calendar, MapPin, BookOpen, Images, ExternalLink, X } from "lucide-react";
 
 const glimpseImages = [
     "/conference/pictures/previous-edition/2025/1-1-300x200.jpeg",
@@ -66,8 +67,10 @@ const speakers = [
 ];
 
 export default function PreviousEdition2025Page() {
+    const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
     return (
-        <div className="w-full pt-28 pb-20 bg-slate-50">
+        <div className="w-full pt-28 pb-20 ">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <section className="relative overflow-hidden rounded-[2rem] border border-slate-200 bg-slate-900 text-white px-8 py-14 md:px-14 md:py-20">
                     <div
@@ -192,13 +195,44 @@ export default function PreviousEdition2025Page() {
                                 whileInView={{ opacity: 1, scale: 1 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: idx * 0.04 }}
-                                className="aspect-[3/2] rounded-xl overflow-hidden border border-slate-200 bg-white"
+                                onClick={() => setSelectedImage(image)}
+                                className="aspect-[3/2] rounded-xl overflow-hidden border border-slate-200 bg-white cursor-pointer hover:shadow-lg hover:border-primary/20 transition-all group"
                             >
-                                <img src={image} alt={`INCIP 2025 glimpse ${idx + 1}`} className="w-full h-full object-cover" />
+                                <img src={image} alt={`INCIP 2025 glimpse ${idx + 1}`} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                             </motion.div>
                         ))}
                     </div>
                 </section>
+
+                <AnimatePresence>
+                    {selectedImage && (
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            onClick={() => setSelectedImage(null)}
+                            className="fixed inset-0 z-[100] bg-slate-900/95 backdrop-blur-sm flex items-center justify-center p-4 md:p-10"
+                        >
+                            <motion.button
+                                initial={{ opacity: 0, scale: 0.5 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                className="absolute top-6 right-6 text-white/70 hover:text-white p-2 hover:bg-white/10 rounded-full transition-all"
+                                onClick={() => setSelectedImage(null)}
+                            >
+                                <X size={32} />
+                            </motion.button>
+                            <motion.img
+                                layoutId={selectedImage}
+                                src={selectedImage}
+                                alt="Enlarged glimpse"
+                                className="max-w-full max-h-full object-contain rounded-xl shadow-2xl"
+                                initial={{ scale: 0.9, opacity: 0 }}
+                                animate={{ scale: 1, opacity: 1 }}
+                                transition={{ type: "spring", damping: 25, stiffness: 300 }}
+                            />
+                        </motion.div>
+                    )}
+                </AnimatePresence>
             </div>
         </div>
     );

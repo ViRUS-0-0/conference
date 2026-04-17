@@ -46,7 +46,7 @@ export default function AboutPage() {
 
 
     return (
-        <div className="w-full pt-32 pb-20 overflow-hidden bg-slate-50/50">
+        <div className="w-full pt-32 pb-20 overflow-hidden /50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
                 {/* Section Header */}
@@ -90,7 +90,7 @@ export default function AboutPage() {
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                             {keyDetails.map((detail, idx) => (
-                                <div key={idx} className="flex flex-col items-center text-center p-6 rounded-2xl bg-slate-50/80 border border-slate-100 hover:shadow-lg transition-shadow duration-300">
+                                <div key={idx} className="flex flex-col items-center text-center p-6 rounded-2xl /80 border border-slate-100 hover:shadow-lg transition-shadow duration-300">
                                     <div className="bg-white p-4 rounded-xl shadow-sm mb-4">
                                         {detail.icon}
                                     </div>
@@ -185,7 +185,7 @@ export default function AboutPage() {
                             Call for Papers
                             <ArrowRight className="w-5 h-5" />
                         </Link>
-                        <button className="bg-white text-slate-900 border border-slate-200 px-10 py-4 rounded-full font-bold hover:bg-slate-50 transition-all duration-300">
+                        <button className="bg-white text-slate-900 border border-slate-200 px-10 py-4 rounded-full font-bold hover: transition-all duration-300">
                             Register Now
                         </button>
                     </div>

@@ -32,20 +32,20 @@ export default function Committee() {
     const committeeSections = [
         {
             title: "Organizing Committee",
-            link: "/people/organizing-committee"
+            link: "/committee/organizing-committee"
         },
         {
             title: "Technical Program Committee",
-            link: "/people/technical-program-committee"
+            link: "/committee/technical-program-committee"
         },
         {
             title: "Advisory Committee",
-            link: "/people/advisory-committee"
+            link: "/committee/advisory-committee"
         }
     ];
 
     return (
-        <section id="people" className="w-full py-24 relative bg-slate-50">
+        <section id="committee" className="w-full py-24 relative">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
                 {/* Section Header */}
